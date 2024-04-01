@@ -1,0 +1,19 @@
+@charset "utf-8"; /* 文字コードの宣言 */
+
+main {
+  width: 960px; /* 要素の幅 */
+  margin: auto; /* 要素外部の余白を自動(センタリング) */
+}
+
+h1 {
+  padding: 6px; /* 要素内部の余白 */
+  color: #fff; /* 文字色 */
+  background: linear-gradient(90deg, #00f, #fff); /* 背景色(グラデーション作成) */
+}
+
+table {
+  td {
+    padding: 6px; /* 要素内部の余白 */
+    border-bottom: 1px solid #ccc; /* 要素下の罫線 */
+  }
+}
