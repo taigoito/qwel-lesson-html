@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+main {
+  width: 720px; /* 要素の幅 */
+  margin: auto; /* 要素外部の余白を自動(センタリング) */
+}
+
+h1 {
+  padding: 6px; /* 要素内部の余白 */
+  color: #fff; /* 文字色 */
+  background: linear-gradient(90deg, #069, #fff); /* 背景色(グラデーション作成) */
+}
+
+.mainImg {
+  width: 100%; /* 画像を目一杯広げる */
+}
+
+.calendar {
+  display: flex; /* 子要素を横並びにする */
+  flex-wrap: wrap; /* 子要素がはみ出す場合は下に落ちるようにする */
+}
+
+.calendar__date {
+  flex: 0 0 auto; /* 親要素がflexの場合はとりあえずこれを書いておく */
+  width: 100px; /* 要素の幅: 親要素の7分の1以下にしておく */
+  height: 50px; /* 要素の高さ */
+  line-height: 50px; /* 行間を高さと同じにするとテキストが上下中央に揃う */
+  border-right: 1px solid #ccc; /* 罫線: 右 */
+  border-bottom: 1px solid #ccc; /* 罫線: 下 */
+  text-align: center;
+
+  &:nth-child(7n-1) { /* 疑似セレクタ: 土曜 */
+    color: #00f;
+  }
+
+  &:nth-child(7n) { /* 疑似セレクタ: 日曜 */
+    color: #f00;
+  }
+
+  &:nth-child(-n+7) { /* 疑似セレクタ: 曜日 */
+    border-top: 1px solid #ccc; /* 罫線: 上 */
+    font-weight: 700; /* フォントの太さ */
+  }
+
+  &:nth-child(7n+1) { /* 疑似セレクタ: 月曜 */
+    border-left: 1px solid #ccc; /* 罫線: 左 */
+  }
+}
