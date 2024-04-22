@@ -14,7 +14,7 @@ main {
   text-align: center; /* インライン要素を中央揃え */
 }
 
-.inner1 {
+.inner:nth-child(1) {
   display: inline-block; /* 要素を横積みにする */
   width: 60px;
   height: 60px;
@@ -22,7 +22,7 @@ main {
   vertical-align: middle; /* インライン要素の垂直方向の揃え方を指定 */
 }
 
-.inner2 {
+.inner:nth-child(2) {
   display: inline-block;
   width: 90px;
   height: 90px;
@@ -30,7 +30,7 @@ main {
   vertical-align: middle;
 }
 
-.inner3 {
+.inner:nth-child(3) {
   display: inline-block;
   width: 120px;
   height: 120px;
