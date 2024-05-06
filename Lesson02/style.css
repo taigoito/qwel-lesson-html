@@ -1,11 +1,15 @@
 @charset "utf-8";
 
+* {
+  box-sizing: border-box; /* 全ての要素の計測をボーダーまで含める */
+}
+
 main {
-  width: 720px; /* 要素の幅 */
+  width: 700px; /* 要素の幅 */
   margin: auto; /* 要素外部の余白を自動(センタリング) */
 }
 
-h1 {
+.mainTitle {
   padding: 6px; /* 要素内部の余白 */
   color: #fff; /* 文字色 */
   background: linear-gradient(90deg, #069, #fff); /* 背景色(グラデーション作成) */
@@ -21,7 +25,6 @@ h1 {
 }
 
 .calendar__date {
-  flex: 0 0 auto; /* 親要素がflexの場合はとりあえずこれを書いておく */
   width: 100px; /* 要素の幅: 親要素の7分の1以下にしておく */
   height: 50px; /* 要素の高さ */
   line-height: 50px; /* 行間を高さと同じにするとテキストが上下中央に揃う */
